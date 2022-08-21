@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="TestClasses.VerifyRecargaCelular_page">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyPaymentPageDisplayOrNot"/>
+          <include name="launchCrossBrowser"/>
+          <include name="logoutApplication"/>
+          <include name="createPOMClassObj"/>
+          <include name="launchApplication"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyRecargaCelular_page -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browserName" value="Edge"/>
+    <classes>
+      <class name="TestClasses.VerifyRecargaCelular_page">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyPaymentPageDisplayOrNot"/>
+          <include name="launchCrossBrowser"/>
+          <include name="logoutApplication"/>
+          <include name="createPOMClassObj"/>
+          <include name="launchApplication"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyRecargaCelular_page -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="5" name="OperaTest(failed)">
+    <parameter name="browserName" value="Opera"/>
+    <classes>
+      <class name="TestClasses.VerifyRecargaCelular_page">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyPaymentPageDisplayOrNot"/>
+          <include name="launchCrossBrowser"/>
+          <include name="logoutApplication"/>
+          <include name="createPOMClassObj"/>
+          <include name="launchApplication"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyRecargaCelular_page -->
+    </classes>
+  </test> <!-- OperaTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

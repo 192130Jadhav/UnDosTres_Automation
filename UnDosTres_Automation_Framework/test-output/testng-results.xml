@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-20T22:30:41 IST" name="Suite" finished-at="2022-08-20T22:33:59 IST" duration-ms="197421">
+    <groups>
+    </groups>
+    <test started-at="2022-08-20T22:30:41 IST" name="ChromeTest" finished-at="2022-08-20T22:31:48 IST" duration-ms="66423">
+      <class name="TestClasses.VerifyRecargaCelular_page">
+        <test-method is-config="true" signature="launchCrossBrowser(java.lang.String)[pri:0, instance:TestClasses.VerifyRecargaCelular_page@13e39c73]" started-at="2022-08-20T22:30:41 IST" name="launchCrossBrowser" finished-at="2022-08-20T22:30:45 IST" duration-ms="3889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchCrossBrowser -->
+        <test-method is-config="true" signature="createPOMClassObj()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@13e39c73]" started-at="2022-08-20T22:30:45 IST" name="createPOMClassObj" finished-at="2022-08-20T22:30:45 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMClassObj -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@13e39c73]" started-at="2022-08-20T22:30:45 IST" name="launchApplication" finished-at="2022-08-20T22:31:00 IST" duration-ms="15202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyPaymentPageDisplayOrNot()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@13e39c73]" started-at="2022-08-20T22:31:01 IST" name="verifyPaymentPageDisplayOrNot" finished-at="2022-08-20T22:31:47 IST" duration-ms="46934" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="button" class="button inactive btn-block" name="loginbtn" id="loginBtn" disabled="">...</button> is not clickable at point (759, 683). Other element would receive the click: <form role="form" method="post" id="loginForm">...</form>
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-978CN6RD', ip: '192.168.43.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\vijay\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ecf3c1d37b6ec7aa4943809761e70af5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="button inactive btn-block" name="loginbtn" id="loginBtn" disabled="">...</button> is not clickable at point (759, 683). Other element would receive the click: <form role="form" method="post" id="loginForm">...</form>
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-978CN6RD', ip: '192.168.43.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\vijay\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ecf3c1d37b6ec7aa4943809761e70af5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at POM_Classes.Payment_Page.clickOnLoginBtn(Payment_Page.java:90)
+at TestClasses.VerifyRecargaCelular_page.verifyPaymentPageDisplayOrNot(VerifyRecargaCelular_page.java:99)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentPageDisplayOrNot -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@13e39c73]" started-at="2022-08-20T22:31:47 IST" name="logoutApplication" finished-at="2022-08-20T22:31:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="clearObject()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@13e39c73]" started-at="2022-08-20T22:31:47 IST" name="clearObject" finished-at="2022-08-20T22:31:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObject -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@13e39c73]" started-at="2022-08-20T22:31:47 IST" name="closeBrowser" finished-at="2022-08-20T22:31:48 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestClasses.VerifyRecargaCelular_page -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2022-08-20T22:31:48 IST" name="EdgeTest" finished-at="2022-08-20T22:32:59 IST" duration-ms="71099">
+      <class name="TestClasses.VerifyRecargaCelular_page">
+        <test-method is-config="true" signature="launchCrossBrowser(java.lang.String)[pri:0, instance:TestClasses.VerifyRecargaCelular_page@56620197]" started-at="2022-08-20T22:31:48 IST" name="launchCrossBrowser" finished-at="2022-08-20T22:31:49 IST" duration-ms="1222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchCrossBrowser -->
+        <test-method is-config="true" signature="createPOMClassObj()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@56620197]" started-at="2022-08-20T22:31:49 IST" name="createPOMClassObj" finished-at="2022-08-20T22:31:49 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMClassObj -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@56620197]" started-at="2022-08-20T22:31:49 IST" name="launchApplication" finished-at="2022-08-20T22:32:12 IST" duration-ms="22620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyPaymentPageDisplayOrNot()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@56620197]" started-at="2022-08-20T22:32:12 IST" name="verifyPaymentPageDisplayOrNot" finished-at="2022-08-20T22:32:59 IST" duration-ms="47025" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="button" class="button inactive btn-block" name="loginbtn" id="loginBtn" disabled="">...</button> is not clickable at point (759, 685). Other element would receive the click: <form role="form" method="post" id="loginForm">...</form>
+  (Session info: MicrosoftEdge=104.0.1293.63)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-978CN6RD', ip: '192.168.43.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.63, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59716}, msedge: {msedgedriverVersion: 104.0.1293.63 (7dd22b4a7f12..., userDataDir: C:\Users\vijay\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b25ba02017e073af213325f98d7ca901]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="button inactive btn-block" name="loginbtn" id="loginBtn" disabled="">...</button> is not clickable at point (759, 685). Other element would receive the click: <form role="form" method="post" id="loginForm">...</form>
+  (Session info: MicrosoftEdge=104.0.1293.63)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-978CN6RD', ip: '192.168.43.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.63, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59716}, msedge: {msedgedriverVersion: 104.0.1293.63 (7dd22b4a7f12..., userDataDir: C:\Users\vijay\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b25ba02017e073af213325f98d7ca901
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at POM_Classes.Payment_Page.clickOnLoginBtn(Payment_Page.java:90)
+at TestClasses.VerifyRecargaCelular_page.verifyPaymentPageDisplayOrNot(VerifyRecargaCelular_page.java:99)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentPageDisplayOrNot -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@56620197]" started-at="2022-08-20T22:32:59 IST" name="logoutApplication" finished-at="2022-08-20T22:32:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@56620197]" started-at="2022-08-20T22:32:59 IST" name="closeBrowser" finished-at="2022-08-20T22:32:59 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="clearObject()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@56620197]" started-at="2022-08-20T22:32:59 IST" name="clearObject" finished-at="2022-08-20T22:32:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObject -->
+      </class> <!-- TestClasses.VerifyRecargaCelular_page -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2022-08-20T22:32:59 IST" name="OperaTest" finished-at="2022-08-20T22:33:59 IST" duration-ms="59760">
+      <class name="TestClasses.VerifyRecargaCelular_page">
+        <test-method is-config="true" signature="launchCrossBrowser(java.lang.String)[pri:0, instance:TestClasses.VerifyRecargaCelular_page@72057ecf]" started-at="2022-08-20T22:32:59 IST" name="launchCrossBrowser" finished-at="2022-08-20T22:33:00 IST" duration-ms="1382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Opera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchCrossBrowser -->
+        <test-method is-config="true" signature="createPOMClassObj()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@72057ecf]" started-at="2022-08-20T22:33:00 IST" name="createPOMClassObj" finished-at="2022-08-20T22:33:00 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMClassObj -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@72057ecf]" started-at="2022-08-20T22:33:00 IST" name="launchApplication" finished-at="2022-08-20T22:33:11 IST" duration-ms="10692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyPaymentPageDisplayOrNot()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@72057ecf]" started-at="2022-08-20T22:33:11 IST" name="verifyPaymentPageDisplayOrNot" finished-at="2022-08-20T22:33:59 IST" duration-ms="47515" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="button" class="button inactive btn-block" name="loginbtn" id="loginBtn" disabled="">...</button> is not clickable at point (740, 729). Other element would receive the click: <form role="form" method="post" id="loginForm">...</form>
+  (Session info: chrome=104.0.5112.81)
+  (Driver info: operadriver=104.0.5112.81 (5b7b76419d50f583022568b6764b630f6ddc9208-refs/branch-heads/5112@{#1309}),platform=Windows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-978CN6RD', ip: '192.168.43.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, browserConnectionEnabled: false, browserName: opera, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59959}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, opera: {operadriverVersion: 104.0.5112.81 (5b7b76419d50..., userDataDir: C:\Users\vijay\AppData\Loca...}, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 104.0.5112.81, webStorageEnabled: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a08ecdb9af73e5ade18846b27d429962]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="button inactive btn-block" name="loginbtn" id="loginBtn" disabled="">...</button> is not clickable at point (740, 729). Other element would receive the click: <form role="form" method="post" id="loginForm">...</form>
+  (Session info: chrome=104.0.5112.81)
+  (Driver info: operadriver=104.0.5112.81 (5b7b76419d50f583022568b6764b630f6ddc9208-refs/branch-heads/5112@{#1309}),platform=Windows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-978CN6RD', ip: '192.168.43.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, browserConnectionEnabled: false, browserName: opera, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59959}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, opera: {operadriverVersion: 104.0.5112.81 (5b7b76419d50..., userDataDir: C:\Users\vijay\AppData\Loca...}, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 104.0.5112.81, webStorageEnabled: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a08ecdb9af73e5ade18846b27d429962
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at POM_Classes.Payment_Page.clickOnLoginBtn(Payment_Page.java:90)
+at TestClasses.VerifyRecargaCelular_page.verifyPaymentPageDisplayOrNot(VerifyRecargaCelular_page.java:99)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentPageDisplayOrNot -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@72057ecf]" started-at="2022-08-20T22:33:59 IST" name="logoutApplication" finished-at="2022-08-20T22:33:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="clearObject()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@72057ecf]" started-at="2022-08-20T22:33:59 IST" name="clearObject" finished-at="2022-08-20T22:33:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObject -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestClasses.VerifyRecargaCelular_page@72057ecf]" started-at="2022-08-20T22:33:59 IST" name="closeBrowser" finished-at="2022-08-20T22:33:59 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestClasses.VerifyRecargaCelular_page -->
+    </test> <!-- OperaTest -->
+  </suite> <!-- Suite -->
+</testng-results>
